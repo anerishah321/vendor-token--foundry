@@ -1,8 +1,8 @@
 pragma solidity ^0.8.13;
 // SPDX-License-Identifier: MIT
 
-import "@openzeppelin/contracts/access/Ownable.sol";
-import "..src/YourToken.sol";
+import "node_modules/@openzeppelin/contracts/access/Ownable.sol";
+import "../src/YourToken..sol";
 
 contract Vendor is Ownable {
     /// Reference to our ERC20 token contract
