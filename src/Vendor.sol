@@ -51,6 +51,10 @@ contract Vendor is Ownable {
         require(sent, "Failed to withdraw");
     }
 
+    receive() external payable {}
+
+    fallback() external payable {}
+
     /// Allow users to sell tokens back to the vendor
     function sellTokens(uint256 amount) public {
         // Validate token amount
